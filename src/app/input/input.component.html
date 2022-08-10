@@ -1,0 +1,16 @@
+<div class="container">
+  <app-label [label]="label"></app-label>
+  <div class="inputContainer">
+    <input
+      [(ngModel)]="value"
+      (ngModelChange)="valueChanged($event)"
+      (blur)="onBlur($event)"
+      [type]="type"
+      [id]="id"
+      [placeholder]="placeholder"
+      [disabled]="disabled"
+      min="1"
+      max="10000000"
+    />
+  </div>
+</div>

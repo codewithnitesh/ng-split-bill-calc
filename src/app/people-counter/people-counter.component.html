@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="noOfPeoplecontainer">
+    <app-label label="No of People"></app-label>
+    <div class="controls">
+      <span class="buttonContainer">
+        <button class="splitButton" (click)="increasePeople()">
+          <span class="buttonText">+</span>
+        </button>
+      </span>
+      <span class="splitAmount" id="numberOfPeople">{{ numberOfPeople }}</span>
+      <span class="buttonContainer">
+        <button class="splitButton" (click)="decreasePeople()">
+          <span class="buttonText">-</span>
+        </button>
+      </span>
+    </div>
+  </div>
+</div>
